@@ -34,9 +34,7 @@
 </div>
 
 <!-- Ink Transition -->
-<div class="cd-transition-layer visible opening">
-    <div class="bg-layer"></div>
-</div>
+
 <!--/Preloader -->
 
 <!--Header Start-->
@@ -466,7 +464,7 @@
 
                     <!-- LAYER NR. 11 -->
                     <div class="tp-caption   tp-resizeme"
-                         data-fontsize="['20','20','18','17']"
+                         data-fontsize="['40','40','28','25']"
                          data-frames='[{"delay":2360,"speed":1500,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-height="none"
                          data-hoffset="['325','210','0','0']" data-paddingbottom="[0,0,0,0]"
                          data-paddingleft="[0,0,0,0]"
@@ -484,7 +482,7 @@
                          data-y="['middle','middle','middle','middle']"
                          id="slide-43-layer-14"
 
-                         style="z-index: 15; min-width: 651px; max-width: 651px; white-space: normal; font-size: 15px; line-height: 30px; font-weight: 300; color: #ffffff; letter-spacing: 0px;font-family:Roboto;">
+                         style="z-index: 15; min-width: 651px; max-width: 651px; white-space: normal; font-size: 15px; line-height: 35px; font-weight: 300; color: #ffffff; letter-spacing: 0px;font-family:Roboto;">
                         Найдём it специалиста для вашей компании за 14 дней, используя собственный 10-ти летний опыт в development
                     </div>
 
@@ -767,29 +765,64 @@
 <section class="bg-light">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 wow fadeInLeft">
-                <div class="heading-area">
-                    <span class="sub-title">We are megaone company</span>
-                    <h2 class="title"><span class="main-color js-rotating">Robust Design, Creative Idea</span> and
-                        Development Solutions</h2>
-                    <p class="para">There are many variations of passages of Lorem Ipsum available, but the majority
-                        have suffered alteration in some form, by injected humour, or randomised words which don't look
-                        even slightly believable. If you are going to use a passage of Lorem Ipsum.</p>
-                    <a class="btn btn-large btn-rounded btn-blue btn-hvr-pink mt-3" href="javascript:void(0);">Подробнее
-                        <div class="btn-hvr-setting">
-                            <ul class="btn-hvr-setting-inner">
-                                <li class="btn-hvr-effect"></li>
-                                <li class="btn-hvr-effect"></li>
-                                <li class="btn-hvr-effect"></li>
-                                <li class="btn-hvr-effect"></li>
-                            </ul>
+            <div class="col-md-12">
+                <div class="heading-area pb-2">
+                    <h2 class="text-center title mt-0 mb-5">Свяжитесь с нами</h2>
+                    <!--Contact Form-->
+                    <form class="contact-form" id="contact-form-data">
+                        <div class="row">
+                            <!--Result-->
+                            <div class="col-12" id="result"></div>
+
+                            <!--Left Column-->
+                            <div class="col-md-4">
+                                
+                                
+                                <div class="form-group">
+                                    
+                                    <!-- <div>
+                                        <input type="checkbox" class="custom-checkbox" id="remote" name="remote" value="yes">
+                                        <label for="remote">Удаленно</label>
+                                    </div> -->
+                                </div>
+                            </div>
+
+                            <!--Right Column-->
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <input class="form-control" id="your_name" name="userName" placeholder="Имя" required=""
+                                           type="text">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" id="subject" name="userPhone" placeholder="Телефон" required=""
+                                           type="text">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" id="your_email" name="userEmail" placeholder="Email" required=""
+                                           type="email">
+                                </div>
+                                
+                            </div>
+
+                            <!--Button-->
+                            <div class="col-md-12">
+                                <div class="button-wrap text-center">
+                                    <a class="btn btn-large btn-rounded btn-purple btn-hvr-blue mt-4 contact_btn" href="javascript:void(0);"
+                                       id="submit_btn"><i class="fa fa-spinner fa-spin mr-2 d-none" aria-hidden="true"></i><b>Отправить сообщение</b>
+                                        <div class="btn-hvr-setting">
+                                            <ul class="btn-hvr-setting-inner">
+                                                <li class="btn-hvr-effect"></li>
+                                                <li class="btn-hvr-effect"></li>
+                                                <li class="btn-hvr-effect"></li>
+                                                <li class="btn-hvr-effect"></li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
                         </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-6 wow fadeInRight">
-                <div class="half-img mt-5 pt-4 mt-lg-0 pt-lg-0">
-                    <img alt="image" src="agency/img/vector-art-4.png">
+                    </form>
                 </div>
             </div>
         </div>
