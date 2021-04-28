@@ -18,11 +18,18 @@ $userName = $_POST['userName'];
 $userPhone = $_POST['userPhone'];
 $userEmail = $_POST['userEmail'];
 
+
+echo "go" + $userPhone + "<br>";
+
 $query = sprintf("INSERT INTO Leads (name, phone, email)
 		VALUES ('%s', '%s', '%s')",
  		mysqli_real_escape_string($userName),
     mysqli_real_escape_string($userPhone),
   	mysqli_real_escape_string($userEmail));
+
+
+echo "mysqli" + mysqli_real_escape_string($userPhone);
+
 
 if ($conn->query($query) === TRUE) {
   echo "New record created successfully";
