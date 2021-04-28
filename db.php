@@ -31,8 +31,8 @@ $m = mysqli_real_escape_string($conn, $userPhone);
 
 if ($conn->query($query) === TRUE) {
   echo "Спасибо за обращение! Мы свяжемся с Вами в ближайшее время!";
-  $msg = "Новый лид $userName, $userEmail, $userPhone"
-  mail("Fujman94@gmail.com", "gogogog", $msg)
+  $msg = "Новый лид $userName, $userEmail, $userPhone";
+  mail("Fujman94@gmail.com", "gogogog", $msg);
 } else {
   echo "Error: " . $query . "<br>" . $conn->error;
 }
