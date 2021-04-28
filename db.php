@@ -12,8 +12,6 @@ if ($conn->connect_error) {
 }
 
 
-echo $_POST['userName'];
-
 $userName = $_POST['userName'];
 $userPhone = $_POST['userPhone'];
 $userEmail = $_POST['userEmail'];
@@ -32,8 +30,8 @@ $m = mysqli_real_escape_string($conn, $userPhone);
 if ($conn->query($query) === TRUE) {
   echo "Спасибо за обращение! Мы свяжемся с Вами в ближайшее время!";
   $msg = "Новый лид $userName, $userEmail, $userPhone";
-  mail("Fujman94@gmail.com", "gogogog", $msg);
-  mail("davidpolonsky5+hj4yeu68uzrscqqy9hju@boards.trello.com", "gogogog", $msg);
+  mail("Fujman94@gmail.com", "Новый лид!", $msg);
+  mail("davidpolonsky5+hj4yeu68uzrscqqy9hju@boards.trello.com", "Новый лид!", $msg);
 } else {
   echo "Error: " . $query . "<br>" . $conn->error;
 }
