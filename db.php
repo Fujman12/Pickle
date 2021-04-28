@@ -2,7 +2,7 @@
 $servername = "ku421687.mysql.ukraine.com.ua";
 $username = "ku421687_db";
 $password = "3asZuzlh";
-$dbname = "ku421687_db"
+$dbname = "ku421687_db";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
