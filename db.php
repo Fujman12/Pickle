@@ -40,7 +40,6 @@ if ($conn->query($query) === TRUE) {
 $conn->close();
 
 sleep(10);
-header("Location: http://www.pickle.in.ua/"); /* Перенаправление браузера */
 
 /* Убедиться, что код ниже не выполнится после перенаправления .*/
 exit;
