@@ -17,7 +17,7 @@ $userName = $_POST['userName'];
 $userPhone = $_POST['userPhone'];
 $userEmail = $_POST['userEmail'];
 
-$query = spintf("INSERT INTO Leads (name, phone, email)
+$query = sprintf("INSERT INTO Leads (name, phone, email)
 		VALUES ('%s', '%s', '%s')",
  		mysql_real_escape_string($userName),
     mysql_real_escape_string($userPhone),
