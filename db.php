@@ -28,8 +28,8 @@ $query = sprintf("INSERT INTO Leads (name, phone, email)
   	mysqli_real_escape_string($userEmail));
 
 
-$m = mysqli_real_escape_string($userPhone):
-echo "mysqli $m <br>"
+$m = mysqli_real_escape_string($userPhone);
+echo "mysqli $m <br>";
 
 
 if ($conn->query($query) === TRUE) {
