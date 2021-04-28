@@ -32,10 +32,17 @@ if ($conn->query($query) === TRUE) {
   $msg = "Новый лид $userName, $userEmail, $userPhone";
   mail("Fujman94@gmail.com", "Новый лид!", $msg);
   mail("davidpolonsky5+hj4yeu68uzrscqqy9hju@boards.trello.com", "Новый лид!", $msg);
+  mail("polonskiydavid@gmail.com", "Новый лид!", $msg);
 } else {
   echo "Error: " . $query . "<br>" . $conn->error;
 }
 
 $conn->close();
+
+sleep(5);
+header("Location: http://www.pickle.in.ua/"); /* Перенаправление браузера */
+
+/* Убедиться, что код ниже не выполнится после перенаправления .*/
+exit;
 
 ?>
