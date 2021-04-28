@@ -19,7 +19,7 @@ $userPhone = $_POST['userPhone'];
 $userEmail = $_POST['userEmail'];
 
 
-echo "go" + $userPhone + "<br>";
+echo "go + $userPhone <br>";
 
 $query = sprintf("INSERT INTO Leads (name, phone, email)
 		VALUES ('%s', '%s', '%s')",
@@ -28,7 +28,8 @@ $query = sprintf("INSERT INTO Leads (name, phone, email)
   	mysqli_real_escape_string($userEmail));
 
 
-echo "mysqli" + mysqli_real_escape_string($userPhone);
+$m = mysqli_real_escape_string($userPhone):
+echo "mysqli $m <br>"
 
 
 if ($conn->query($query) === TRUE) {
