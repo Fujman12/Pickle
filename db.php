@@ -19,9 +19,9 @@ $userEmail = $_POST['userEmail'];
 
 $query = sprintf("INSERT INTO Leads (name, phone, email)
 		VALUES ('%s', '%s', '%s')",
- 		mysql_real_escape_string($userName),
-    mysql_real_escape_string($userPhone),
-  	mysql_real_escape_string($userEmail));
+ 		mysqli_real_escape_string($userName),
+    mysqli_real_escape_string($userPhone),
+  	mysqli_real_escape_string($userEmail));
 
 if ($conn->query($query) === TRUE) {
   echo "New record created successfully";
