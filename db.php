@@ -10,7 +10,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
-echo "Connected successfully";
+
 
 echo $_POST['userName'];
 
@@ -18,8 +18,6 @@ $userName = $_POST['userName'];
 $userPhone = $_POST['userPhone'];
 $userEmail = $_POST['userEmail'];
 
-
-echo "go + $userPhone <br>";
 
 $query = sprintf("INSERT INTO Leads (name, phone, email)
 		VALUES ('%s', '%s', '%s')",
@@ -29,11 +27,12 @@ $query = sprintf("INSERT INTO Leads (name, phone, email)
 
 
 $m = mysqli_real_escape_string($conn, $userPhone);
-echo "mysqli $m <br>";
 
 
 if ($conn->query($query) === TRUE) {
-  echo "New record created successfully";
+  echo "Спасибо за обращение! Мы свяжемся с Вами в ближайшее время!";
+  $msg = "Новый лид $userName, $userEmail, $userPhone"
+  mail("Fujman94@gmail.com", "gogogog", $msg)
 } else {
   echo "Error: " . $query . "<br>" . $conn->error;
 }
