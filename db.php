@@ -23,12 +23,12 @@ echo "go + $userPhone <br>";
 
 $query = sprintf("INSERT INTO Leads (name, phone, email)
 		VALUES ('%s', '%s', '%s')",
- 		mysqli_real_escape_string($userName),
-    mysqli_real_escape_string($userPhone),
-  	mysqli_real_escape_string($userEmail));
+ 		mysqli_real_escape_string($conn, $userName),
+    mysqli_real_escape_string($conn, $userPhone),
+  	mysqli_real_escape_string($conn, $userEmail));
 
 
-$m = mysqli_real_escape_string($userPhone);
+$m = mysqli_real_escape_string($conn, $userPhone);
 echo "mysqli $m <br>";
 
 
